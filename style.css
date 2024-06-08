@@ -1,0 +1,15 @@
+#lottie-container {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    margin: 0 auto;
+}
+
+body {
+    height: 100vh;
+   background-image: url('https://wallpapercave.com/wp/wp7274705.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js" integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+</head>
+<body>
+    
+    <div id="lottie-container">
+        <img src="butterfly.json" alt="">
+    </div>
+    
+
+</body>
+<script>
+    var animation = lottie.loadAnimation({
+        container: document.getElementById('lottie-container'), 
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'butterfly.json' 
+    });
+
+    document.addEventListener('mousemove', function() {
+        let clientX = event.clientX;
+        let clientY = event.clientY;
+        document.getElementById('lottie-container').style.top = clientY + 'px';
+        document.getElementById('lottie-container').style.left = clientX + 'px';
+
+    })
+    
+</script>
+</html>
